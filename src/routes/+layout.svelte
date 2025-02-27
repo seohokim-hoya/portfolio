@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
+	import { cn } from '$lib/utils/cn';
+	import { page } from '$app/state';
 </script>
 
 <!-- App Shell -->
@@ -9,16 +12,23 @@
 		<!-- App Bar -->
 		<AppBar>
 			<svelte:fragment slot="lead">
-				<strong class="text-xl uppercase">Skeleton</strong>
+				<a
+					href="/"
+					target="_self"
+					class="cursor-pointer"
+				>
+					<strong class="text-xl uppercase">Portfolio {page.url.pathname}</strong>
+				</a>
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
+				<LightSwitch />
 				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://discord.gg/EXqV7W8MtY"
-					target="_blank"
+					class={(page.url.pathname === '/abc') ? "text-blue-500" : ""}
+					href="/abc"
+					target="_self"
 					rel="noreferrer"
 				>
-					Discord
+					Management
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
@@ -26,7 +36,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					Twitter
+					Development
 				</a>
 				<a
 					class="btn btn-sm variant-ghost-surface"
