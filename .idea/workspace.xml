@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="" />
+    <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/management/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,14 +27,14 @@
   }
 }</component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="fea37dd5-de7d-4576-8f95-74763ad415a1" />
+    <option name="defaultAccountId" value="67786b02-5e0c-46fb-a596-fca02e83d4ed" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/seohokim-hoya/portfolio.git",
-    "accountId": "67786b02-5e0c-46fb-a596-fca02e83d4ed"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/seohokim-hoya/portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;67786b02-5e0c-46fb-a596-fca02e83d4ed&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -47,7 +54,8 @@
     "npm.dev.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\seoho\\OneDrive\\Documents\\GitHub\\portfolio\\node_modules\\prettier",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "C:\\Users\\seoho\\OneDrive\\Documents\\GitHub\\portfolio\\node_modules\\typescript\\lib"
+    "ts.external.directory.path": "C:\\Users\\seoho\\OneDrive\\Documents\\GitHub\\portfolio\\node_modules\\typescript\\lib",
+    "ts.rename.search.for.dynamic.occurrences": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -79,6 +87,7 @@
       <updated>1740561993362</updated>
       <workItem from="1740561995078" duration="3920000" />
       <workItem from="1740615009835" duration="6431000" />
+      <workItem from="1740638688672" duration="7723000" />
     </task>
     <servers />
   </component>
