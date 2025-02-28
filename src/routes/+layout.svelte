@@ -1,12 +1,12 @@
 <script lang="ts">
 	import '../app.postcss';
 	import { AppShell, AppBar, initializeStores } from '@skeletonlabs/skeleton';
-	import { LightSwitch } from '@skeletonlabs/skeleton';
 	import { Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import { cn } from '$lib/utils/cn';
 	import { page } from '$app/state';
+	import { TableOfContents } from '@skeletonlabs/skeleton';
 
 	import Icon from 'svelte-awesome';
 	import { bars } from 'svelte-awesome/icons';
@@ -32,13 +32,15 @@
 
 	const sideMenuSettings: DrawerSettings = {
 		id: '2',
-		bgDrawer: 'text-white border-2 border-white',
+		bgDrawer: 'text-white border-2 border-white bg-surface-900 p-4',
 		// blur: 'backdrop-blur',
 		// bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
 		width: 'w-[280px] md:w-[480px]',
-		padding: 'p-4',
+		padding: 'p-4 pt-28',
 		rounded: 'rounded-xl'
 	};
+
+	// drawerStore.open(sideMenuSettings);
 
 	function openSideMenu() {
 		drawerStore.open(sideMenuSettings);
@@ -51,9 +53,27 @@
 			profile
 		</p>
 	{:else if ($drawerStore.id === '2')}
-		<p>
-			side menu
-		</p>
+		<div class="flex flex-col gap-4">
+			<a
+				class={cn("w-full flex items-center justify-center", (page.url.pathname === '/management') ? "text-primary-500" : "hover:text-primary-500")}
+				href="/management"
+				target="_self"
+				rel="noreferrer"
+			>
+				Management
+			</a>
+			<hr />
+			<a
+				class={cn("w-full flex items-center justify-center", (page.url.pathname === '/development') ? "text-primary-500" : "hover:text-primary-500")}
+				href="/development"
+				target="_self"
+				rel="noreferrer"
+			>
+				Development
+			</a>
+			<hr />
+			<TableOfContents />
+		</div>
 	{/if}
 </Drawer>
 
@@ -91,23 +111,6 @@
 						src="https://avatars.githubusercontent.com/u/108274577?v=4"
 					/>
 				</button>
-				<LightSwitch />
-				<a
-					class={(page.url.pathname === '/management') ? "text-primary-500" : "hover:text-primary-500"}
-					href="/management"
-					target="_self"
-					rel="noreferrer"
-				>
-					Management
-				</a>
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://twitter.com/SkeletonUI"
-					target="_blank"
-					rel="noreferrer"
-				>
-					Development
-				</a>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
