@@ -32,9 +32,9 @@
 
 	const sideMenuSettings: DrawerSettings = {
 		id: '2',
-		bgDrawer: 'text-white border-2 border-white bg-surface-900 p-4',
+		bgDrawer: 'text-white border-2 border-white bg-surface-900 p-4 opacity-90',
 		// blur: 'backdrop-blur',
-		// bgBackdrop: 'bg-gradient-to-tr from-indigo-500/50 via-purple-500/50 to-pink-500/50',
+		// bgBackdrop: 'opacity-90',
 		width: 'w-[280px] md:w-[480px]',
 		padding: 'p-4 pt-28',
 		rounded: 'rounded-xl'
@@ -55,6 +55,15 @@
 	{:else if ($drawerStore.id === '2')}
 		<div class="flex flex-col gap-4">
 			<a
+				class={cn("w-full flex items-center justify-center", (page.url.pathname === '/') ? "text-primary-500" : "hover:text-primary-500")}
+				href="/"
+				target="_self"
+				rel="noreferrer"
+			>
+				History
+			</a>
+			<hr />
+			<a
 				class={cn("w-full flex items-center justify-center", (page.url.pathname === '/management') ? "text-primary-500" : "hover:text-primary-500")}
 				href="/management"
 				target="_self"
@@ -70,6 +79,15 @@
 				rel="noreferrer"
 			>
 				Development
+			</a>
+			<hr />
+			<a
+				class={cn("w-full flex items-center justify-center", (page.url.pathname === '/research') ? "text-primary-500" : "hover:text-primary-500")}
+				href="/research"
+				target="_self"
+				rel="noreferrer"
+			>
+				Research
 			</a>
 			<hr />
 			<TableOfContents />

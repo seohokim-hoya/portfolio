@@ -14,7 +14,6 @@
   "devDependencies": {
     "@skeletonlabs/skeleton": "2.11.0",
     "@skeletonlabs/tw-plugin": "0.4.1",
-    "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@tailwindcss/typography": "^0.5.16",
@@ -38,6 +37,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@sveltejs/adapter-node": "^5.2.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "svelte-awesome": "^3.3.5",
