@@ -81,14 +81,14 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.dev" />
       <item itemvalue="npm.build" />
+      <item itemvalue="npm.dev" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.25659.40" />
       </set>
     </attachedChunks>
   </component>
@@ -106,6 +106,7 @@
       <workItem from="1740758436879" duration="78000" />
       <workItem from="1740758777173" duration="9155000" />
       <workItem from="1740850780749" duration="5730000" />
+      <workItem from="1740856675423" duration="32000" />
     </task>
     <servers />
   </component>
