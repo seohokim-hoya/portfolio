@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/component/history/item.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/component/history/year.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/research/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +105,7 @@
       <workItem from="1740638688672" duration="11175000" />
       <workItem from="1740758436879" duration="78000" />
       <workItem from="1740758777173" duration="9155000" />
-      <workItem from="1740850780749" duration="5663000" />
+      <workItem from="1740850780749" duration="5730000" />
     </task>
     <servers />
   </component>
