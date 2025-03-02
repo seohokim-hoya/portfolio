@@ -9,7 +9,16 @@
 	import { TableOfContents } from '@skeletonlabs/skeleton';
 
 	import Icon from 'svelte-awesome';
-	import { bars } from 'svelte-awesome/icons';
+	import { bars, github, instagram, envelope, phone } from 'svelte-awesome/icons';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const isFirstVisit = sessionStorage.getItem('isFirstVisit');
+		if (!isFirstVisit) {
+			openProfile();
+			sessionStorage.setItem('isFirstVisit', 'true');
+		}
+	});
 
 	initializeStores();
 
@@ -17,7 +26,7 @@
 
 	const profileDrawerSettings: DrawerSettings = {
 		id: '1',
-		bgDrawer: 'text-white border-2 border-white',
+		bgDrawer: 'text-white border-2 border-white bg-surface-900 p-4',
 		// blur: 'backdrop-blur',
 		width: 'w-full',
 		height: 'h-full',
@@ -40,18 +49,84 @@
 		rounded: 'rounded-xl'
 	};
 
-	// drawerStore.open(sideMenuSettings);
+	drawerStore.open(profileDrawerSettings);
 
 	function openSideMenu() {
 		drawerStore.open(sideMenuSettings);
 	}
+
+	import profile from '$lib/static/profile.png';
 </script>
 
 <Drawer>
 	{#if ($drawerStore.id === '1')}
-		<p>
-			profile
-		</p>
+		<div class="grid grid-cols-5 h-full gap-4">
+			<div class="flex flex-col h-full justify-between items-center border-r pr-4">
+				<div class="flex flex-col space-y-2 items-center">
+					<img
+						alt="profile"
+						src={profile}
+						class="rounded-xl"
+					/>
+					<div class="h3 font-serif">
+						Kim, Seoho
+					</div>
+					<div class="h5 text-gray-400 font-mono">
+						Developer
+					</div>
+				</div>
+				<div class="w-full flex flex-col space-y-4">
+					<div class="grid grid-cols-10 w-full gap-2 items-center">
+						<div class="flex items-end justify-center">
+							<Icon data={phone} scale={1.5} />
+						</div>
+						<div class="col-span-9 text-gray-400">
+							<p>Please contact me by email</p>
+						</div>
+					</div>
+					<div class="grid grid-cols-10 w-full gap-2 items-center">
+						<div class="flex items-end justify-center">
+							<Icon data={envelope} scale={1.5} />
+						</div>
+						<div class="col-span-9">
+							<p>seoho7777.kim@gmail.com</p>
+							<p>seohokim@kaist.ac.kr</p>
+						</div>
+					</div>
+					<a
+						href="https://github.com/seohokim-hoya"
+						target="_blank"
+						rel="noreferrer"
+						class="grid grid-cols-10 w-full gap-2 items-center"
+					>
+						<div class="flex items-end justify-center">
+							<Icon data={github} scale={1.5} />
+						</div>
+						<div class="col-span-9">
+							<p>github.com/seohokim-hoya</p>
+						</div>
+					</a>
+					<a
+						href="https://instagram.com/bellis_perennis_._l"
+						target="_blank"
+						rel="noreferrer"
+						class="grid grid-cols-10 w-full gap-2 items-center"
+					>
+						<div class="flex items-end justify-center">
+							<Icon data={instagram} scale={1.5} />
+						</div>
+						<div class="col-span-9">
+							<p>instagram.com/bellis_perennis_._l</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="flex flex-col h-full items-center col-span-4 space-y-4">
+				<div class="font-serif h4">
+					About Me
+				</div>
+			</div>
+		</div>
 	{:else if ($drawerStore.id === '2')}
 		<div class="flex flex-col gap-4">
 			<a
@@ -95,7 +170,7 @@
 	{/if}
 </Drawer>
 
-<AppShell>
+<AppShell regionPage="scroll-smooth">
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
