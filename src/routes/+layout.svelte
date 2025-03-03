@@ -60,13 +60,13 @@
 
 <Drawer>
 	{#if ($drawerStore.id === '1')}
-		<div class="grid grid-cols-5 h-full gap-4">
-			<div class="flex flex-col h-full justify-between items-center border-r pr-4">
+		<div class="flex h-full gap-4 w-full">
+			<div class="flex flex-col h-full justify-between items-center border-r pr-4 w-fit">
 				<div class="flex flex-col space-y-2 items-center">
 					<img
 						alt="profile"
 						src={profile}
-						class="rounded-xl"
+						class="rounded-xl w-60"
 					/>
 					<div class="h3 font-serif">
 						Kim, Seoho
@@ -75,53 +75,47 @@
 						Developer
 					</div>
 				</div>
-				<div class="w-full flex flex-col space-y-4">
-					<div class="grid grid-cols-10 w-full gap-2 items-center">
-						<div class="flex items-end justify-center">
-							<Icon data={phone} scale={1.5} />
-						</div>
-						<div class="col-span-9 text-gray-400">
-							<p>Please contact me by email</p>
-						</div>
+				<div class="w-full grid grid-rows-4 gap-2 grid-flow-col items-center">
+					<div class="flex items-end justify-end">
+						<Icon data={phone} scale={1.5} />
 					</div>
-					<div class="grid grid-cols-10 w-full gap-2 items-center">
-						<div class="flex items-end justify-center">
-							<Icon data={envelope} scale={1.5} />
-						</div>
-						<div class="col-span-9">
-							<p>seoho7777.kim@gmail.com</p>
-							<p>seohokim@kaist.ac.kr</p>
-						</div>
+					<div class="flex items-end justify-end">
+						<Icon data={envelope} scale={1.5} />
 					</div>
-					<a
-						href="https://github.com/seohokim-hoya"
-						target="_blank"
-						rel="noreferrer"
-						class="grid grid-cols-10 w-full gap-2 items-center"
-					>
-						<div class="flex items-end justify-center">
+					<div class="flex items-end justify-end">
+						<a
+							href="https://github.com/seohokim-hoya"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Icon data={github} scale={1.5} />
-						</div>
-						<div class="col-span-9">
-							<p>github.com/seohokim-hoya</p>
-						</div>
-					</a>
-					<a
-						href="https://instagram.com/bellis_perennis_._l"
-						target="_blank"
-						rel="noreferrer"
-						class="grid grid-cols-10 w-full gap-2 items-center"
-					>
-						<div class="flex items-end justify-center">
+						</a>
+					</div>
+					<div class="flex items-end justify-end">
+						<a
+							href="https://instagram.com/bellis_perennis_._l"
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Icon data={instagram} scale={1.5} />
-						</div>
-						<div class="col-span-9">
-							<p>instagram.com/bellis_perennis_._l</p>
-						</div>
-					</a>
+						</a>
+					</div>
+					<div class="text-gray-400">
+						<p>Please contact me by email</p>
+					</div>
+					<div class="">
+						<p>seoho7777.kim@gmail.com</p>
+						<p>seohokim@kaist.ac.kr</p>
+					</div>
+					<div class="">
+						<p>github.com/seohokim-hoya</p>
+					</div>
+					<div class="">
+						<p>instagram.com/bellis_perennis_._l</p>
+					</div>
 				</div>
 			</div>
-			<div class="flex flex-col h-full items-center col-span-4 space-y-4">
+			<div class="flex flex-col h-full items-center flex-1 space-y-4">
 				<div class="border-b border-gray-700 w-full pb-4 flex flex-col space-y-2">
 					<div class="font-serif h3">
 						About Me
@@ -209,13 +203,13 @@
 				<strong class="text-xl uppercase">Seoho Kim</strong>
 			</a>
 			<svelte:fragment slot="trail">
-				<div class="font-serif h4">
-					About Me
-				</div>
 				<button
-					class="rounded-full"
+					class="flex items-center justify-center gap-4"
 					on:click={openProfile}
 				>
+					<span class="font-serif h4">
+						About Me
+					</span>
 					<Avatar
 						rounded="rounded-xl"
 						initials="SH"
