@@ -1,5 +1,5 @@
 <svelte:options customElement={{
-	tag: 'introduce-item',
+	tag: 'introduce-item-item',
 	props: {
 		content: {reflect: true, type: 'String'},
 	}
@@ -12,7 +12,7 @@
 	export let content;
 </script>
 
-<div class="flex flex-row gap-2">
+<div class="flex flex-row gap-2 items-center">
 	<Icon data={check} />
 	<div>
 		{content}

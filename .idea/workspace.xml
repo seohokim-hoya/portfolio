@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/component/introduction/_item.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/component/introduction/item.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/component/profile.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.postcss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.postcss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/component/introduction/_item.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/component/introduction/_item.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +70,8 @@
       <recent name="C:\Users\seoho\OneDrive\Documents\GitHub\portfolio\src\routes\development" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\seoho\OneDrive\Documents\GitHub\portfolio\src\lib" />
       <recent name="C:\Users\seoho\OneDrive\Documents\GitHub\portfolio\static" />
+      <recent name="C:\Users\seoho\OneDrive\Documents\GitHub\portfolio\src\lib" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -128,6 +125,7 @@
       <workItem from="1740927522283" duration="3935000" />
       <workItem from="1740931757925" duration="10071000" />
       <workItem from="1740981887964" duration="6748000" />
+      <workItem from="1741009116857" duration="3823000" />
     </task>
     <servers />
   </component>
