@@ -9,7 +9,7 @@
 	import { TableOfContents } from '@skeletonlabs/skeleton';
 
 	import Icon from 'svelte-awesome';
-	import { bars, github, instagram, envelope, phone } from 'svelte-awesome/icons';
+	import { bars, github, instagram, envelope, phone, infoCircle } from 'svelte-awesome/icons';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
@@ -122,8 +122,13 @@
 				</div>
 			</div>
 			<div class="flex flex-col h-full items-center col-span-4 space-y-4">
-				<div class="font-serif h4">
-					About Me
+				<div class="border-b border-gray-700 w-full pb-4 flex flex-col space-y-2">
+					<div class="font-serif h3">
+						About Me
+					</div>
+					<div class="">
+						안녕하세요,
+					</div>
 				</div>
 			</div>
 		</div>
@@ -175,15 +180,26 @@
 		<!-- App Bar -->
 		<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 			<svelte:fragment slot="lead">
-				<button
-					type="button"
-					class="btn-icon variant-filled"
-					on:click={openSideMenu}
-				>
-					<Icon
-						data="{bars}"
-					/>
-				</button>
+				<div class="flex items-center justify-center gap-4">
+					<button
+						type="button"
+						class="btn-icon variant-filled"
+						on:click={openSideMenu}
+					>
+						<Icon
+							data="{bars}"
+						/>
+					</button>
+					<button
+						type="button"
+						on:click={openSideMenu}
+					>
+						<Icon
+							data="{infoCircle}"
+							scale={1.5}
+						/>
+					</button>
+				</div>
 			</svelte:fragment>
 			<a
 				href="/"
@@ -193,6 +209,9 @@
 				<strong class="text-xl uppercase">Seoho Kim</strong>
 			</a>
 			<svelte:fragment slot="trail">
+				<div class="font-serif h4">
+					About Me
+				</div>
 				<button
 					class="rounded-full"
 					on:click={openProfile}

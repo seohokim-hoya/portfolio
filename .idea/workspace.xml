@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69dced9b-a59b-4615-8b2f-95f360cc0369" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/component/history/month.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/static/profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.postcss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.postcss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/component/history/year.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/component/history/year.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +51,7 @@
     "npm.build.executor": "Run",
     "npm.dev.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\seoho\\OneDrive\\Documents\\GitHub\\portfolio\\node_modules\\prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "ts.external.directory.path": "C:\\Users\\seoho\\OneDrive\\Documents\\GitHub\\portfolio\\node_modules\\typescript\\lib",
     "ts.rename.search.for.dynamic.occurrences": "true"
@@ -125,6 +119,7 @@
       <workItem from="1740856675423" duration="32000" />
       <workItem from="1740927522283" duration="3935000" />
       <workItem from="1740931757925" duration="10071000" />
+      <workItem from="1740981887964" duration="780000" />
     </task>
     <servers />
   </component>
