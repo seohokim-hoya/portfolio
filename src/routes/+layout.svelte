@@ -9,8 +9,11 @@
 	import { TableOfContents } from '@skeletonlabs/skeleton';
 
 	import Icon from 'svelte-awesome';
-	import { bars, github, instagram, envelope, phone, infoCircle } from 'svelte-awesome/icons';
+	import { bars, github, instagram, envelopeSquare, phone, infoCircle } from 'svelte-awesome/icons';
 	import { onMount } from 'svelte';
+
+	import Item from '$lib/component/introduction/item.svelte';
+	import Content from '$lib/component/introduction/_item.svelte';
 
 	onMount(() => {
 		const isFirstVisit = sessionStorage.getItem('isFirstVisit');
@@ -49,7 +52,7 @@
 		rounded: 'rounded-xl'
 	};
 
-	drawerStore.open(profileDrawerSettings);
+	// drawerStore.open(profileDrawerSettings);
 
 	function openSideMenu() {
 		drawerStore.open(sideMenuSettings);
@@ -66,21 +69,21 @@
 					<img
 						alt="profile"
 						src={profile}
-						class="rounded-xl w-60"
+						class="rounded-xl w-72"
 					/>
 					<div class="h3 font-serif">
-						Kim, Seoho
+						Kim Seoho
 					</div>
 					<div class="h5 text-gray-400 font-mono">
 						Developer
 					</div>
 				</div>
-				<div class="w-full grid grid-rows-4 gap-2 grid-flow-col items-center">
+				<div class="w-full grid grid-rows-4 gap-x-4 grid-flow-col items-center">
 					<div class="flex items-end justify-end">
 						<Icon data={phone} scale={1.5} />
 					</div>
 					<div class="flex items-end justify-end">
-						<Icon data={envelope} scale={1.5} />
+						<Icon data={envelopeSquare} scale={1.5} />
 					</div>
 					<div class="flex items-end justify-end">
 						<a
@@ -117,13 +120,23 @@
 			</div>
 			<div class="flex flex-col h-full items-center flex-1 space-y-4">
 				<div class="border-b border-gray-700 w-full pb-4 flex flex-col space-y-2">
-					<div class="font-serif h3">
-						About Me
-					</div>
-					<div class="">
-						안녕하세요,
+					<div class="font-brush h1 p-4 flex items-center justify-center">
+						안녕하세요, 김서호입니다.
 					</div>
 				</div>
+<!--				<Item>-->
+<!--					<svelte:fragment slot="title">-->
+<!--						<div class="font-bold">-->
+<!--							학력-->
+<!--						</div>-->
+<!--						<div>-->
+<!--							Education-->
+<!--						</div>-->
+<!--					</svelte:fragment>-->
+<!--					<svelte:fragment slot="description">-->
+<!--						<Content content="Test" />-->
+<!--					</svelte:fragment>-->
+<!--				</Item>-->
 			</div>
 		</div>
 	{:else if ($drawerStore.id === '2')}

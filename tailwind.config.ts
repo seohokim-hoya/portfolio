@@ -10,7 +10,11 @@ export default {
 		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				brush: ['Nanum Brush Script', 'sans-serif']
+			}
+		}
 	},
 	plugins: [
 		typography,

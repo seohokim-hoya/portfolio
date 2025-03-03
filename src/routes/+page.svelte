@@ -27,7 +27,7 @@
 		<hr />
 		<Month month="02">
 			<Item summary="KAIST 입학" />
-			<Item summary="KAIST 학생문화공간위원회 합류" />
+			<Item summary="KAIST 학생문화공간위원회 입회 (관리국 개발팀)" />
 		</Month>
 		<hr />
 		<Month month="09">
@@ -37,7 +37,7 @@
 	<Year year="2025">
 		<Month month="02">
 			<Item summary="전산학부 진입" />
-			<Item summary="전산학부 집행위원회 합류" />
+			<Item summary="전산학부 집행위원회 입회 (비서실)" />
 			<Item summary="Dean's List 수상">
 				<svelte:fragment slot="content">
 					<p class="h4">
